@@ -42,7 +42,7 @@ const NavBar = () => {
                 <Link href={"/my_bookings"}>My Bookings</Link>
               </li>
               <li>
-                <Link href={"/admin"}>Admin</Link>
+                <Link href={"/add-destination"}>Add Destination</Link>
               </li>
             </ul>
           </div>
