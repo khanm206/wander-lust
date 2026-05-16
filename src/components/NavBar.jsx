@@ -10,7 +10,8 @@ const NavBar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle"
+              className="btn btn-ghost btn-circle
+              lg:hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +37,32 @@ const NavBar = () => {
                 <Link href={"/"}>Home</Link>
               </li>
               <li>
-                <Link href={"/destinations"}>Destinations</Link>
+                <Link href={"/destination"}>Destinations</Link>
+              </li>
+              <li>
+                <Link href={"/my_bookings"}>My Bookings</Link>
+              </li>
+              <li>
+                <Link href={"/add-destination"}>Add Destination</Link>
+              </li>
+              <li>
+                <Link href={"/profile"}>Profile</Link>
+              </li>
+              <li>
+                <Link href={"/login"}>Login</Link>
+              </li>
+              <li>
+                <Link href={"/signup"}>Sign Up</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="hidden lg:flex">
+            <ul className="menu menu-horizontal px-1 font-semibold text-base">
+              <li>
+                <Link href={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link href={"/destination"}>Destinations</Link>
               </li>
               <li>
                 <Link href={"/my_bookings"}>My Bookings</Link>
@@ -58,17 +84,19 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="navbar-end">
-          <ul className="flex gap-4 font-semibold">
-            <li>
-              <Link href={"/profile"}>Profile</Link>
-            </li>
-            <li>
-              <Link href={"/login"}>Login</Link>
-            </li>
-            <li>
-              <Link href={"/signup"}>Sign Up</Link>
-            </li>
-          </ul>
+          <div className=" hidden lg:flex">
+            <ul className="menu menu-horizontal px-1 font-semibold text-base">
+              <li>
+                <Link href={"/profile"}>Profile</Link>
+              </li>
+              <li>
+                <Link href={"/login"}>Login</Link>
+              </li>
+              <li>
+                <Link href={"/signup"}>Sign Up</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
